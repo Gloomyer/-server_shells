@@ -1,3 +1,8 @@
+## 项目地址
+Github 地址为clone地址
+
+原地址:[https://git.gloomyer.com/root/server_shells](https://git.gloomyer.com/root/server_shells)
+
 ## 服务器环境搭建脚本
 
 这是一些常用的服务器环境搭建脚本 90%需要配合docker完成
