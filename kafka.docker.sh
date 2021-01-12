@@ -8,6 +8,7 @@ docker run -d --restart=always --net dnm --ip 172.172.0.80 \
 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://172.172.0.80:9092 \
 -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 \
 -v /etc/localtime:/etc/localtime \
+-p 9092:9092 \
 wurstmeister/kafka:2.13-2.6.0
 
 # docker run -d --restart=always --log-driver json-file --log-opt max-size=100m 
