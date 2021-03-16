@@ -36,6 +36,9 @@ docker run -d \
 -e "MAX_POSSIBLE_HEAP=200000000" \
 rocketmqinc/rocketmq:4.4.0 sh mqbroker -c /opt/rocketmq-4.4.0/conf/broker.conf
 
+
+# 最后这个web管理平台对外暴露端口是8080  
+# 我这边走了nginx转发 所以没有映射出来
 docker run -d --name rmqconsole \
 --net dnm --ip 172.25.0.53 \
 -e "JAVA_OPTS=-Drocketmq.namesrv.addr=172.25.0.51:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" \
